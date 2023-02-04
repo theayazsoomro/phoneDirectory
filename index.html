@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Phone Directory Application Developed By: Ayaz Soomro</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <h3>Contacts</h3>
+        <div class="row">
+            <input type="search" name="search" placeholder="Search Contact" id="search" class="form-control col-lg-4 col-sm-12" >
+            <button class="btn btn-primary col-lg-4 col-sm-12 mt-2" id="searchBtn">Search</button>
+        </div>
+
+        <!-- Sorting -->
+        <div class="row sorting">
+            <span class="btn btn-default col-lg-2 col-sm-12 mt-2 me-2">Filter</span>
+            <button class="btn btn-primary col-lg-2 col-sm-12 mt-2 me-2" id="asc">A-Z</button>
+            <button class="btn btn-primary col-lg-2 col-sm-12 mt-2 me-2" id="desc">Z-A</button>
+        </div>
+
+        <!-- Contacts List -->
+        <div class="row">
+            <div class="d-block row" id="list">
+            </div>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="content d-lg-block d-md-none d-sm-none">
+        <div class="listData">
+          <h5 class="text-dark text-center" id="username">Contact Details</h5>
+          <div class="phone d-flex justify-content-between px-3 p-2 mt-4">
+            <span class="d-inline-block text-dark d-flex justify-content-between" id="number">0123456789</span> <span class="d-inline-block text-dark"><i class='fa fa-phone text-primary'></i> | <i class='fa fa-message text-primary'></i></span>
+          </div>
+          <!-- Phone Ends -->
+          <h6 class="text-dark mt-4">Call History</h6>
+          <div class="history p-2">
+            <span class="d-block w-100 text-dark d-flex justify-content-between">Incoming <span class="text-dark">07 / 12 / 2022</span></span>
+            <span class="d-block w-100 text-dark d-flex justify-content-between mt-1">Outgoing <span class="text-dark">06 / 12 /2022</span></span>
+            <span class="d-block w-100 text-dark d-flex justify-content-between">Missed <span class="text-dark">06 / 12 / 2022</span></span>
+            <span class="d-block w-100 text-dark d-flex justify-content-between mt-1">Incoming <span class="text-dark">05 / 12 / 2022</span></span>
+            <span class="d-block w-100 text-dark d-flex justify-content-between">Incoming <span class="text-dark">05 / 12 / 2022</span></span>
+            <span class="d-block w-100 text-dark d-flex justify-content-between mt-1">Outgoing <span class="text-dark">04 / 12 / 2022</span></span>
+            <span class="d-block w-100 text-dark d-flex justify-content-between">Outgoing <span class="text-dark">04 / 12 / 2022</span></span>
+            <span class="d-block w-100 text-dark d-flex justify-content-between mt-1">Missed <span class="text-dark">04 / 12 / 2022</span></span>
+          </div>
+          <!-- History Ends -->
+        </div>
+        <!-- List Data Ends -->
+      </div>
+      <!-- Content Ends -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
